@@ -1,0 +1,6 @@
+v1.01
+-added LED torch
+-added easter egg
+v1.02
+-fixed the 'gold-bug'
+-fixed the 123'beeg'bug

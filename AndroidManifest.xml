@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.resistorcolorcodec"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+   <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+   <uses-feature android:name="android.hardware.camera"/>
+   <uses-permission android:name="android.permission.CAMERA"/>
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a_menu_res4"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.resistorcolorcodec.MainActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Black"
+       android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="rcalc"
+          android:screenOrientation="portrait">    
+        </activity>
+        <activity android:name="rcc"
+              android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity android:name="about" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
